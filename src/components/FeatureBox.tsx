@@ -95,8 +95,8 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
         <div className="relative mt-10 pl-4">
           <span className="absolute inset-0 w-[2px] bg-gray-200 before:absolute before:inset-0 before:h-0 before:bg-gray-400 before:transition-all before:duration-500 before:ease-in-out group-hover:before:h-full group-hover:before:bg-gray-700" />
 
-          <h2 className="text-lg font-bold">{title}</h2>
-          <p className="mt-5">
+          <h2 className="text-xl font-bold">{title}</h2>
+          <p className="mt-3 text-sm font-medium">
             {captions.map((caption, index) => (
               <span key={index}>
                 {caption}

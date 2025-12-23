@@ -63,12 +63,15 @@ export default function HomePage() {
         </nav>
       </div>
 
-      <div className="z-10 flex h-fit w-screen flex-col items-center justify-center gap-48 bg-white px-6 py-32 md:px-8 lg:px-16">
-        <p className="text-center text-2xl md:max-w-[36rem] md:text-3xl lg:text-4xl">
-          RimuFest envisions an inclusive and innovative chamber music festival
-          that empowers young musicians to thrive. We offer high-quality music
-          education, fostering teamwork, leadership, and a diverse repertoire.
-        </p>
+      <div className="z-10 flex h-fit w-screen flex-col items-center justify-center gap-24 bg-white px-6 py-32 md:px-8 lg:px-12 xl:px-16">
+        <div className="relative flex items-center justify-center gap-8 md:gap-12">
+          <p className="text-center font-bold text-base leading-relaxed max-w-[28rem] md:max-w-[36rem] md:text-lg">
+            RimuFest envisions an inclusive and innovative chamber music festival
+            that empowers young musicians to thrive. We offer high-quality music
+            education, fostering teamwork, leadership, and a diverse repertoire.
+          </p>
+          <div className="hidden h-24 w-[2px] bg-gray-300 md:block lg:h-32"></div>
+        </div>
         {/* <div className="w-full md:w-1/2">
           <FeatureBox
             title="Holiday Programme 2025"
@@ -82,7 +85,7 @@ export default function HomePage() {
             borderColor="green-500"
           />
         </div> */}
-        <div className="flex w-full flex-col items-stretch gap-10 md:flex-row md:items-start">
+        <div className="flex w-full flex-col items-stretch gap-10 md:flex-row md:items-start my-16 md:my-24">
           <div className="w-full md:w-1/2">
             <FeatureBox
               title="7th Annual Festival 2026"
@@ -98,7 +101,7 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="w-full md:mt-32 md:w-1/2">
+          <div className="w-full md:mt-16 md:w-1/2">
             <FeatureBox
               title="The Harikoa Collective: Leyendas"
               href="/leyendas"
@@ -112,7 +115,7 @@ export default function HomePage() {
               framePosition="down"
               imagePosition="object-left"
             />
-            <div className="mt-6 pl-12">
+            <div className="mt-6 pl-4">
               <Link
                 href="https://www.theincubator.co.nz/event-details/harikoa-collective-at-the-jam-factory"
                 target="_blank"
@@ -125,16 +128,15 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col-reverse gap-8 md:gap-24">
+        <div className="flex md:flex-row flex-col-reverse gap-8 md:gap-12 lg:gap-16">
           <Image
-            alt="project-box"
+            alt="RimuFest performance at venue"
             width={1000}
             height={1200}
-            className="h-auto w-full md:w-[400px] md:h-[480px] object-cover
-             md:mt-6"
+            className="h-auto w-full max-w-full max-h-[400px] md:max-h-none md:w-[400px] md:h-[480px] object-cover transition-transform duration-300 hover:scale-105 md:mt-6"
             src={"/home/performance.jpeg"}
           />
-          <p className="text-lg lg:leading-8 md:text-xl lg:max-w-96">
+          <p className="text-base font-semibold leading-relaxed md:text-lg font-bold max-w-[28rem] lg:max-w-96">
             Through captivating performances and community engagement, we aim to
             inspire and make a lasting impact on the musical journey of young
             talents in the Bay of Plenty and beyond.

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { RimuFestLogo } from "./AppMenu/RimufestLogo";
 
 export function HomeHero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -51,11 +52,15 @@ export function HomeHero() {
   return (
     <>
       <div className="relative bg-black z-10 h-screen w-screen overflow-hidden">
+        {/* Logo and text - centered in the middle */}
         <div
-          className={`absolute inset-0 z-10 flex items-center justify-center transition-transform duration-300 ease-in-out`}
+          className={`absolute inset-0 z-10 flex flex-col items-center justify-center gap-6 md:gap-8 transition-transform duration-300 ease-in-out`}
         >
-          <span className="text-center text-3xl font-semibold text-pink-500">
-            Rimufest Chamber Music Festival
+          <div className="scale-125 md:scale-150 lg:scale-[1.75]">
+            <RimuFestLogo />
+          </div>
+          <span className="text-center text-2xl font-bold tracking-wide text-white drop-shadow-2xl md:text-2xl lg:text-3xl">
+            Chamber Music Festival
           </span>
         </div>
 
@@ -64,7 +69,6 @@ export function HomeHero() {
           className="fixed inset-0 z-0 h-full w-full object-cover"
           src="/splash.mp4"
           autoPlay
-          loop
           muted
           playsInline
           style={{
@@ -74,6 +78,9 @@ export function HomeHero() {
             opacity: fadeOut ? 0 : 1,
           }}
         />
+        
+        {/* Dark overlay for better text visibility */}
+        <div className="fixed inset-0 z-[5] bg-black/20 pointer-events-none" />
 
         {/* Optionally, add a div for smoother fade/blend */}
         {/* 

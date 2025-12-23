@@ -16,7 +16,7 @@ export const Faculty = () => {
   return (
     <div className="my-12 w-full lg:px-24">
       <h2 className="text-2xl font-bold ">Faculty</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         {facultyMembers.map(({ artist, borderColor, framePosition }) => (
           <FeatureBox
             key={artist.path}
