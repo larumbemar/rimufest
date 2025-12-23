@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <h3 className=" text-sm">rimufest@gmail.com</h3>
           <p className="text-center text-xs text-white">
-            © Rimufest {new Date().getFullYear()} - All rights reserved.
+            © Rimufest {new Date().getFullYear()} - All rights reserved
           </p>
         </div>
       </div>
