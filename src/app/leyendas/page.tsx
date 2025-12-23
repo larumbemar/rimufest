@@ -167,17 +167,18 @@ export default function LeyendasPage() {
           <span>•</span>
           <span>The Jam Factory, Tauranga</span>
         </div>
-        <div className="flex flex-col text-[10px] font-bold uppercase tracking-widest md:hidden">
-          <span className="text-[#c5a059]">Jan 6, 2026 • 6:30 PM</span>
+        <div className="flex flex-col text-[10px] font-bold uppercase tracking-widest whitespace-nowrap md:hidden">
+          <span className="text-[#c5a059]">Jan 6 2026 • 6:30 PM</span>
           <span>The Jam Factory</span>
         </div>
         <Link
           href={BOOKING_URL}
           target="_blank"
           rel="noreferrer"
-          className="ml-2 inline-flex items-center justify-center rounded-full bg-[#c5a059] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent"
+          className="ml-2 inline-flex items-center justify-center rounded-full bg-[#c5a059] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent whitespace-nowrap md:whitespace-normal"
         >
-          Book Tickets
+          <span className="md:hidden">Tickets</span>
+          <span className="hidden md:inline">Book Tickets</span>
         </Link>
       </div>
     </div>
@@ -185,12 +186,25 @@ export default function LeyendasPage() {
 
   {/* 2. HERO SECTION (Bottom-Aligned Content) */}
   <section ref={heroRef} className="relative flex h-[80vh] w-full flex-col justify-end overflow-hidden bg-[#f8f3e6] md:h-[90vh]">
+    {/* Mobile image - centered */}
+    <Image
+      src="/leyendas/hero-mobile.jpeg"
+      alt="Leyendas backdrop"
+      fill
+      priority
+      className="pointer-events-none select-none object-cover object-center md:hidden"
+      style={{
+        transform: `translateY(${scrollY}px) scale(1.1)`,
+        willChange: "transform",
+      }}
+    />
+    {/* Desktop image */}
     <Image
       src="/leyendas/hero.jpg"
       alt="Leyendas backdrop"
       fill
       priority
-      className="pointer-events-none select-none object-cover object-[left_20%] md:object-[center_20%]" // Left on mobile, center on desktop
+      className="hidden pointer-events-none select-none object-cover object-[center_20%] md:block"
       style={{
         transform: `translateY(${scrollY}px) scale(1.1)`,
         willChange: "transform",

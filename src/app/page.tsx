@@ -45,17 +45,18 @@ export default function HomePage() {
                 <span>•</span>
                 <span>The Jam Factory</span>
               </div>
-              <div className="flex flex-col gap-1 text-[10px] font-bold uppercase tracking-widest lg:hidden">
-                <span className="text-[#f8f3e6]">THE HARIKOA COLLECTIVE: LEYENDAS</span>
-                <span className="text-[#c5a059]">Jan 6, 2026 • The Jam Factory</span>
+              <div className="flex flex-col gap-1 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap lg:hidden">
+                <span className="text-[#f8f3e6]">HARIKOA COLLECTIVE: LEYENDAS</span>
+                <span className="text-[#c5a059]">Jan 6 2026 • The Jam Factory</span>
               </div>
               <Link
                 href="https://www.theincubator.co.nz/event-details/harikoa-collective-at-the-jam-factory"
                 target="_blank"
                 rel="noreferrer"
-                className="ml-2 inline-flex items-center justify-center rounded-full bg-[#c5a059] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent"
+                className="ml-2 inline-flex items-center justify-center rounded-full bg-[#c5a059] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent whitespace-nowrap lg:whitespace-normal"
               >
-                Book Tickets
+                <span className="lg:hidden">Tickets</span>
+                <span className="hidden lg:inline">Book Tickets</span>
               </Link>
             </div>
           </div>
