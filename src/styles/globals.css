@@ -31,6 +31,7 @@
   }
 }
 @layer base {
+  html,
   body {
     overscroll-behavior: none;
   }

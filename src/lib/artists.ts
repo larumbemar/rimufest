@@ -14,7 +14,8 @@ export type Artists =
   | "kate-ellingham-hunt"
   | "maria-mo"
   | "jesbery-hartono-hall"
-  | "callum";
+  | "callum"
+  | "donald";
 
 export const artists: Record<Artists, Artist> = {
   "amelia-taylor": {
@@ -90,6 +91,22 @@ export const artists: Record<Artists, Artist> = {
       "Callum has toured for Chamber Music New Zealand, recorded for Atoll Records and performed on Radio NZ Concert. He played at Upsurge Festival 2022 in the Bay of Islands as well as the Asian Composers League Festival in Christchurch. Callum was a part of the Auckland String Quartet Summer School 2023, tutoring and playing with the Jade String Quartet. In April 2024 he performed in the inaugural Waiheke Chamber Music Festival.",
       "Callum performs frequently with the Auckland Chamber Orchestra and the Auckland Philharmonia. He has also played as Guest Principal of the Christchurch Symphony Orchestra and the Opus Chamber Orchestra.",
       "Callum studied with Suren Bagratuni at Michigan State University, where he graduated with a Doctorate of Musical Arts. Prior to his studies in the USA he completed his Masters degree at the University of Waikato, studying with James Tennant. At MSU Callum worked as a teaching assistant, and he now teaches cello in Auckland, on the North Shore as well as at Epsom Music School.",
+    ],
+  },
+  donald: {
+    name: "Donald Maurice",
+    instrument: "Viola",
+    image: "donald",
+    path: "donald",
+    bio: [
+      "Donald was until retiring in 2020 Professor of Music at Victoria University of Wellington. He has performed internationally for four decades as a solo violist and chamber musician and has given world premieres and New Zealand premieres of many works. He has presented at twenty International Viola Congresses.",
+      "He was awarded the Silver Alto Clef by the International Viola Society in 2000, was made an Honorary Life Member of the American Viola Society in 2007, and in 2009 he gave the William Primrose Memorial Concert in Utah. He has performed for New Zealand diplomatic missions in Washington DC, New York, Ottawa, Berlin, Bangkok, Kuala Lumpur and Warsaw. In 2014 he was made a Member of the New Zealand Order of Merit.",
+      "Donald has books published on Béla Bartók and Alfred Hill. \"Bartók's Viola Concerto - The Remarkable Story of his Swansong\" (Oxford) is recognized as an authoritative text.",
+      "The award-winning CD of his live 2008 performance of Boris Pigovat's \"Holocaust Requiem\" has received high acclaim in Europe and North America. He gave the German premiere of this work in Wuerzburg in 2011.",
+      "He is producer of Lacrimosa, a documentary film about the composer and the Requiem.",
+      "Donald's solo and chamber music discography spans 18 CDs on Naxos, Tantara, Acte Prealable, Atoll, and Kiwi Pacific. He is featured playing viola d'amore on a documentary film made in Poland about the baroque composer Christoph Graupner. His most recent viola d'amore CD with Archi d'Amore Zelanda (Atoll) features trios by New Zealand composers David Hamilton and Michael Williams.",
+      "In 2018 Donald founded Sinfonia for Hope, an orchestra of professional musicians who donate their time once a year to raise funds for humanitarian causes.",
+      "Donald studied under Nannie Jamieson at the Guildhall School of Music and Drama, Donald McInnes at the University of Washington, Max Rostal at the Aldeburgh Festival, and William Primrose at the Banff School of Fine Arts.",
     ],
   },
 };

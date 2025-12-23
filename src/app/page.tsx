@@ -13,7 +13,7 @@ export default function HomePage() {
           that empowers young musicians to thrive. We offer high-quality music
           education, fostering teamwork, leadership, and a diverse repertoire.
         </p>
-        <div className="w-full md:w-1/2">
+        {/* <div className="w-full md:w-1/2">
           <FeatureBox
             title="Holiday Programme 2025"
             href="/holiday-programme"
@@ -25,7 +25,7 @@ export default function HomePage() {
             ]}
             borderColor="green-500"
           />
-        </div>
+        </div> */}
         <div className="w-full md:w-1/2">
           <FeatureBox
             title="7th Annual Festival 2026"

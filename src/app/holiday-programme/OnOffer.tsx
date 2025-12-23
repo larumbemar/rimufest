@@ -11,7 +11,7 @@ export const offers = [
 export const OnOffer = () => {
   return (
     <div className="flex flex-col gap-4 lg:w-3/5">
-      <p className="text-sm">WHAT'S INCLUDED</p>
+      <p className="text-sm">WHAT&apos;S INCLUDED</p>
       <ul className="flex flex-col gap-1 list-disc pl-5 ">
         {offers.map((offer) => (
           <li key={offer}>{offer}</li>

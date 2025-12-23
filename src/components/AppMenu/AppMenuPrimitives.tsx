@@ -21,6 +21,11 @@ const navigationLinks = [
     href: "/annual-festival",
     image: "annual",
   },
+  {
+    label: "Harikoa Collective: Leyendas",
+    href: "/leyendas",
+    image: "leyendas",
+  },
 ];
 
 const AppMenuRoot = AppMenuPrimitive.Root;
@@ -181,9 +186,9 @@ const AppMenuNavigationLinks = ({
 }: AppMenuNavigationLinksProps) => (
   <div className={cn("z-50 flex flex-col items-center", className)} {...props}>
     {navigationLinks.map(({ href, label, image }) => (
-      <AppMenuClose setBackgroundImage={setBackgroundImage}>
+      <AppMenuClose key={href} setBackgroundImage={setBackgroundImage}>
         <Link
-          className={"group relative h-16 text-4xl font-semibold text-white"}
+          className={"group relative h-16 text-4xl text-center font-semibold text-white"}
           href={href}
           onMouseEnter={() => setBackgroundImage(image)}
           onMouseLeave={() => setBackgroundImage("")}
