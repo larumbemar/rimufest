@@ -159,18 +159,26 @@ export default function LeyendasPage() {
   }}
 >
   {/* 1. TOP UTILITY BAR (Logistics) */}
-  <nav className="sticky top-0 z-30 w-full border-b border-[#c5a059]/20 bg-[#3b2317] py-5 text-white shadow-md">
-    <div className="mx-auto flex max-w-7xl items-center gap-10 px-6 md:px-12">
-      <div className="hidden items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] md:flex">
-        <span>Jan 6, 2026 • 6:30 PM</span>
-        <span>The Jam Factory, Tauranga</span>
-      </div>
-      <div className="flex flex-col text-[10px] font-bold uppercase tracking-widest md:hidden">
-        <span className="text-[#c5a059]">Jan 6, 2026 • 6:30 PM</span>
-        <span>The Jam Factory</span>
-      </div>
-      <div className="flex items-center gap-4">
-        <BookingButton className="bg-[#c5a059] px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] hover:bg-white transition-colors" />
+  <nav className="sticky top-0 z-30 h-[62px] w-full border-b border-[#c5a059]/20 bg-[#3b2317] text-white shadow-md">
+    <div className="mx-auto flex h-full max-w-7xl items-center pl-6 pr-20 md:pl-12 md:pr-20">
+      <div className="flex flex-1 items-center gap-4">
+        <div className="hidden items-center gap-4 text-[11px] font-bold uppercase tracking-[0.2em] md:flex">
+          <span>Jan 6, 2026 • 6:30 PM</span>
+          <span>•</span>
+          <span>The Jam Factory, Tauranga</span>
+        </div>
+        <div className="flex flex-col text-[10px] font-bold uppercase tracking-widest md:hidden">
+          <span className="text-[#c5a059]">Jan 6, 2026 • 6:30 PM</span>
+          <span>The Jam Factory</span>
+        </div>
+        <Link
+          href={BOOKING_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="ml-2 inline-flex items-center justify-center rounded-full bg-[#c5a059] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent"
+        >
+          Book Tickets
+        </Link>
       </div>
     </div>
   </nav>
@@ -182,7 +190,7 @@ export default function LeyendasPage() {
       alt="Leyendas backdrop"
       fill
       priority
-      className="pointer-events-none select-none object-cover opacity-90 object-[left_20%] md:object-[center_20%]" // Left on mobile, center on desktop
+      className="pointer-events-none select-none object-cover object-[left_20%] md:object-[center_20%]" // Left on mobile, center on desktop
       style={{
         transform: `translateY(${scrollY}px) scale(1.1)`,
         willChange: "transform",

@@ -36,7 +36,7 @@ const AppMenuTrigger = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AppMenuPrimitive.Trigger
     ref={ref}
-    className={cn("fixed right-8 top-8 z-40 focus:outline-none", className)}
+    className={cn("fixed right-8 top-5 z-40 focus:outline-none", className)}
     {...props}
   >
     <HamburgerMenuIcon className="h-6 w-5 text-pink-500 focus:outline-none" />

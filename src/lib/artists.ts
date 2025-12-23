@@ -34,7 +34,7 @@ export const artists: Record<Artists, Artist> = {
   },
   "alejandro-larumbe": {
     name: "Alejandro Larumbe",
-    instrument: "Violin, Orchestra Conductor",
+    instrument: "Orchestra Conductor",
     title: "Co-Founder",
     image: "alejandro",
     path: "alejandro-larumbe",

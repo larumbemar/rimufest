@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState, useRef } from "react";
 import { cn } from "~/lib/utils";
 
 interface FeatureBoxProps {
@@ -9,7 +11,22 @@ interface FeatureBoxProps {
   captions: string[];
   borderColor: string;
   href: string;
+  framePosition?: "up" | "down";
+  imagePosition?: string;
 }
+
+const borderColorMap: Record<string, string> = {
+  green: "border-green-500",
+  blue: "border-blue-500",
+  purple: "border-purple-500",
+  amber: "border-amber-500",
+  pink: "border-pink-500",
+  red: "border-red-500",
+  yellow: "border-yellow-500",
+  indigo: "border-indigo-500",
+  teal: "border-teal-500",
+  orange: "border-orange-500",
+};
 
 export const FeatureBox: React.FC<FeatureBoxProps> = ({
   imageSrc,
@@ -17,22 +34,60 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
   captions,
   borderColor,
   href,
+  framePosition = "up",
+  imagePosition,
 }) => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    // Calculate offset from center (normalized to -1 to 1)
+    const offsetX = (e.clientX - centerX) / (rect.width / 2);
+    const offsetY = (e.clientY - centerY) / (rect.height / 2);
+    
+    // Limit the movement (max 15px in each direction)
+    const maxOffset = 15;
+    setMousePosition({
+      x: offsetX * maxOffset,
+      y: offsetY * maxOffset,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setMousePosition({ x: 0, y: 0 });
+  };
+
   return (
     <div className="group w-full px-8 py-6">
       <Link href={href} className="block">
-        <div className="relative">
+        <div 
+          ref={containerRef}
+          className="relative"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+        >
           <span
             className={cn(
-              "z-10 absolute left-[20px] top-[-26px] block h-full w-[calc(100%-40px)] border-[3px] border-solid md:left-[7%] md:top-[-2.08vw] md:w-[86%]",
-              `border-${borderColor}`
+              "z-10 absolute left-[20px] block h-full w-[calc(100%-40px)] border-[3px] border-solid md:left-[7%] md:w-[86%] transition-transform duration-300 ease-out",
+              framePosition === "up" 
+                ? "top-[-26px] md:top-[-2.08vw]" 
+                : "bottom-[-26px] md:bottom-[-2.08vw]",
+              borderColorMap[borderColor] || "border-gray-500"
             )}
+            style={{
+              transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
+            }}
           />
           <div className="relative w-full aspect-10/12">
             <Image
               alt="project-box"
               fill
-              className="object-cover"
+              className={cn("object-cover", imagePosition)}
               src={imageSrc}
             />
           </div>

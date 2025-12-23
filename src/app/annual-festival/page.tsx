@@ -12,7 +12,7 @@ const Annual2025 = () => {
           <Details />
           <OnOffer />
         </div>
-        {/* <Faculty /> */}
+        <Faculty />
       </div>
     </>
   );

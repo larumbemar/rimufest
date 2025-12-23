@@ -45,7 +45,8 @@ const About = () => {
               "Our flagship festival is a six-day summer program for beginner to advanced string players. It offers a unique experience where students participate in chamber ensembles, orchestra, Alexander Technique sessions, coaching with high-caliber national and international musicians, rehearsals, masterclasses, and performance opportunities. The program also fosters the development of essential life skills, such as effective communication, teamwork, goal-setting, and organizational skills.",
             ]}
             imageSrc="/annual-portrait.jpeg"
-            borderColor="green-500"
+            borderColor="blue"
+            framePosition="up"
           />
           <div className="mt-48">
             <FeatureBox
@@ -55,7 +56,8 @@ const About = () => {
                 "Our Holiday Program is a mini version of the summer program: a four-day opportunity for string players to enhance their chamber music skills, attend technique and ensemble classes, and conclude with a concert.",
               ]}
               imageSrc="/holiday.jpeg"
-              borderColor="green-500"
+              borderColor="purple"
+              framePosition="down"
             />
           </div>
         </div>
