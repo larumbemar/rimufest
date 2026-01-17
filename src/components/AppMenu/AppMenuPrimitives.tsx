@@ -21,11 +21,11 @@ const navigationLinks = [
     href: "/annual-festival",
     image: "annual",
   },
-  {
-    label: "Harikoa Collective: Leyendas",
-    href: "/leyendas",
-    image: "leyendas",
-  },
+  // {
+  //   label: "Harikoa Collective: Leyendas",
+  //   href: "/leyendas",
+  //   image: "leyendas",
+  // },
 ];
 
 const AppMenuRoot = AppMenuPrimitive.Root;

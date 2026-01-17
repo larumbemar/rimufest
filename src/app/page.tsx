@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FeatureBox } from "~/components/FeatureBox";
 import { HomeHero } from "~/components/HomeHero";
-import { LinkButton } from "~/components/LinkButton";
 
 export default function HomePage() {
   const [showUtilityBar, setShowUtilityBar] = useState(true);
@@ -30,37 +29,7 @@ export default function HomePage() {
       <div ref={heroRef} className="relative">
         <HomeHero />
 
-        {/* Leyendas utility bar - fixed over hero, sticky, disappears after hero */}
-        <nav
-          className={`fixed top-0 left-0 right-0 z-20 h-[62px] w-full border-b border-[#c5a059]/20 bg-[#3b2317] text-white shadow-md transition-opacity duration-300 ${
-            showUtilityBar ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          <div className="mx-auto flex h-full max-w-7xl items-center pl-6 pr-20 lg:pl-12 lg:pr-20">
-            <div className="flex flex-1 items-center gap-4">
-              <div className="hidden flex-row items-center gap-4 text-[11px] font-bold uppercase tracking-[0.2em] lg:flex">
-                <span className="text-[#f8f3e6]">THE HARIKOA COLLECTIVE: LEYENDAS</span>
-                <span>•</span>
-                <span>Jan 6, 2026</span>
-                <span>•</span>
-                <span>The Jam Factory</span>
-              </div>
-              <div className="flex flex-col gap-1 text-[10px] font-bold uppercase tracking-widest whitespace-nowrap lg:hidden">
-                <span className="text-[#f8f3e6]">HARIKOA COLLECTIVE: LEYENDAS</span>
-                <span className="text-[#c5a059]">Jan 6 2026 • The Jam Factory</span>
-              </div>
-              <Link
-                href="https://www.theincubator.co.nz/event-details/harikoa-collective-at-the-jam-factory"
-                target="_blank"
-                rel="noreferrer"
-                className="ml-2 inline-flex items-center justify-center rounded-full bg-[#c5a059] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent whitespace-nowrap lg:whitespace-normal"
-              >
-                <span className="lg:hidden">Tickets</span>
-                <span className="hidden lg:inline">Book Tickets</span>
-              </Link>
-            </div>
-          </div>
-        </nav>
+
       </div>
 
       <div className="z-10 flex h-fit w-screen flex-col items-center justify-center gap-24 bg-white px-6 py-32 md:px-8 lg:px-12 xl:px-16">
