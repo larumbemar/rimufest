@@ -11,21 +11,16 @@ import { RimuFestLogo } from "./RimufestLogo";
 const navigationLinks = [
   { label: "About", href: "/about", image: "about" },
   { label: "Gallery", href: "/gallery", image: "gallery" },
-  // {
-  //   label: "Holiday Programme 2025",
-  //   href: "/holiday-programme",
-  //   image: "holiday-programme",
-  // },
   {
-    label: "Annual 2026",
+    label: "Holiday Programme 2026",
+    href: "/holiday-programme",
+    image: "holiday-programme",
+  },
+  {
+    label: "Annual 2027",
     href: "/annual-festival",
     image: "annual",
   },
-  // {
-  //   label: "Harikoa Collective: Leyendas",
-  //   href: "/leyendas",
-  //   image: "leyendas",
-  // },
 ];
 
 const AppMenuRoot = AppMenuPrimitive.Root;

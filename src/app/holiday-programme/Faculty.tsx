@@ -5,9 +5,8 @@ import type { Artist } from "~/lib/artists";
 
 const facultyMembers: Array<{ artist: Artist; borderColor: string; framePosition: "up" | "down" }> = [
   { artist: artists["amelia-taylor"], borderColor: "green", framePosition: "up" },
-  { artist: artists["alejandro-larumbe"], borderColor: "blue", framePosition: "down" },
-  { artist: artists["maria-mo"], borderColor: "purple", framePosition: "up" },
   { artist: artists["jesbery-hartono-hall"], borderColor: "amber", framePosition: "down" },
+  // Faculty to be confirmed and added.
 ];
 
 export const Faculty = () => {

@@ -7,7 +7,7 @@ const HolidayProgramme = () => {
   return (
     <>
       <PageHero
-        title={"Holiday Programme 2025"}
+        title={"Term 3 Holiday Programme 2026"}
         image={"/holiday-programme.jpeg"}
       />
       <div className="z-10 flex h-fit w-screen flex-col items-center justify-center gap-12 bg-white px-6 py-32 lg:px-8 ">

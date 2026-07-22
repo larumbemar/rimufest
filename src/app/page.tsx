@@ -41,59 +41,44 @@ export default function HomePage() {
           </p>
           <div className="hidden h-24 w-[2px] bg-gray-300 md:block lg:h-32"></div>
         </div>
-        {/* <div className="w-full md:w-1/2">
-          <FeatureBox
-            title="Holiday Programme 2025"
-            href="/holiday-programme"
-            imageSrc="/holiday.jpeg"
-            captions={[
-              "21st-24th September, 2025",
-              "Tauranga, NZ",
-              "Open to Violin, Viola, Cello, Double Bass, and Piano",
-            ]}
-            borderColor="green-500"
-          />
-        </div> */}
         <div className="flex w-full flex-col items-stretch gap-10 md:flex-row md:items-start my-16 md:my-24">
           <div className="w-full md:w-1/2">
             <FeatureBox
-              title="7th Annual Festival 2026"
-              href="/annual-festival"
-              imageSrc="/annual-portrait.jpeg"
+              title="Term 3 Holiday Programme 2026"
+              href="/holiday-programme"
+              imageSrc="/holiday.jpeg"
               captions={[
-                "January 6th - 11th, 2026",
+                "September 27th - 30th, 2026",
                 "Tauranga, NZ",
-                "Open to Violin, Viola, Cello, Double Bass, and Piano",
+                "Applications open now",
               ]}
               borderColor="green"
               framePosition="up"
             />
-          </div>
-
-          <div className="w-full md:mt-16 md:w-1/2">
-            <FeatureBox
-              title="The Harikoa Collective: Leyendas"
-              href="/leyendas"
-              imageSrc="/leyendas/hero.jpg"
-              captions={[
-                "January 6th, 2026 • 6:30 PM",
-                "The Jam Factory, Tauranga",
-                "A journey from Brazil to the Andes",
-              ]}
-              borderColor="amber"
-              framePosition="down"
-              imagePosition="object-left"
-            />
-            <div className="mt-6 pl-4">
-              <Link
-                href="https://www.theincubator.co.nz/event-details/harikoa-collective-at-the-jam-factory"
+             <div className="mt-6 pl-4">
+              <a
+                href="https://forms.gle/eSojeoZd9RdP1Sp46 "
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-4 py-2 text-sm font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent"
               >
-                Book Tickets
-              </Link>
+                Apply now
+              </a>
             </div>
+          </div>
+
+          <div className="w-full md:mt-16 md:w-1/2">
+            <FeatureBox
+              title="8th Annual Festival 2027"
+              href="/annual-festival"
+              imageSrc="/annual-portrait.jpeg"
+              captions={[
+                "January 8th - 13th, 2027",
+                "Tauranga, NZ",
+              ]}
+              borderColor="amber"
+              framePosition="down"
+            />
           </div>
         </div>
 
