@@ -26,10 +26,9 @@ export const artists: Record<Artists, Artist> = {
     image: "amelia-4",
     path: "amelia-taylor",
     bio: [
-      "New Zealand violinist Amelia Taylor has an active international career as a performer and pedagogue. Amelia is founder and director of ArcaSōnica, a chamber music collective that tours annually in Mexico bringing fresh and exciting performances with international musicians, as well as masterclasses, chamber music coachings, and side-by-side concerts with youth orchestra programs. As part of the Taylor-Larumbe duo, she has performed extensively in New Zealand, USA and Mexico. As well as keeping a busy chamber schedule, Taylor performs regularly with symphony orchestras, such as Opus Orchestra (NZ), Baton Rouge Symphony Orchestra, Louisiana Philharmonic, Lansing Symphony, and Midland Symphony Orchestra.",
-      "A talented teacher, Amelia is a certified Suzuki instructor in both the USA and NZ. She currently has a private Suzuki studio in San Diego, USA and Tauranga, NZ.",
-      "Amelia became fascinated with the violin as a toddler and began learning the violin through the Suzuki method. She holds a bachelor’s degree from Waikato University, where she was a Sir Edmund Hillary Scholar, as well as receiving multiple Blues awards. Her graduate studies include a master's in violin performance from Louisiana State University with Espen Lilleslaten, former concertmaster of Bergen Philharmonic (Norway), and an artist diploma at the University of Michigan with David Halen, concertmaster of St. Louis Symphony.",
-      "Amelia has a rich and diverse pool of education to draw upon, from her teachers to her students. She is forever learning and experimenting with ways of teaching and self-improvement.",
+      "Amelia Taylor is a New Zealand violinist, educator, and artistic director with an international career spanning chamber music and orchestral performance. She has performed throughout New Zealand, the United States, Mexico, and Europe, including appearances with Opus Orchestra, Baton Rouge Symphony Orchestra, Louisiana Philharmonic Orchestra, Lansing Symphony Orchestra, and Midland Symphony Orchestra.",
+      "She is a founding member of the Harikoa Collective and performs extensively with the Taylor-Larumbe Duo. Amelia previously founded ArcaSōnica, an international chamber music collective based in Mexico, which presented performances, masterclasses, chamber music coaching, and collaborative programmes with young musicians. This work eventually evolved into RimuFest, a successful chamber music festival based in Tauranga, New Zealand. Amelia is also a certified Suzuki violin teacher in both the USA and New Zealand, with private studios in San Diego and Tauranga.",
+      "She holds degrees from the University of Waikato, Louisiana State University, and the University of Michigan, where she studied with distinguished violinists including Espen Lilleslatten and David Halen.",
     ],
   },
   "alejandro-larumbe": {
@@ -74,11 +73,10 @@ export const artists: Record<Artists, Artist> = {
     image: "jesbery",
     path: "jesbery-hartono-hall",
     bio: [
-      "Jesbery Hartono-Hall holds a Master of Music with First Class Honours from the University of Auckland, New Zealand. She was awarded scholarships and funding such as the Anne Bellam and the Wallace Foundation to further her studies in Europe.",
-      "Jesbery has played for and worked with many renowned artists such as cellists Daniel Müller-Schott, Torleif Thedéen, Alexander Gebert, Clemens Krieger (Dresdner Philharmonie), Dinar Enikeev (Robert Schumann Philharmonie), Ramón Jaffé, Mario di Secondi and Elisabeth Kufferath of the Tetzlaff String Quartet, amongst many others in Germany, America and New Zealand.",
-      "She has played in prestigious venues around Europe, most notably the Berlin Konzerthaus and Predjama Castle, among many others. Jesbery has also played in film soundtracks and other music videos in New Zealand. A founding member of the prize-winning Akato Piano Trio, the group has also been successful in New Zealand and Europe.",
-      "Jesbery is an active orchestral musician who performs regularly with the Christchurch Symphony Orchestra, Auckland Philharmonia Orchestra and the Royal New Zealand Ballet, and has also worked with the Auckland Chamber Orchestra, Bach Musica NZ, Orchestra Wellington and Trust Waikato Symphony Orchestra.",
-      "Jesbery now teaches at the Epsom Music School and also runs a private cello studio of which all who have sat their ABRSM grade exams received marks with Distinction.",
+      "Jesbery Hartono-Hall is a passionate musician who enjoys sharing her love of music through performing as well as teaching the next generation of young musicians.",
+      "As an orchestral musician, Jesbery has performed as Assistant Principal Cello with the Christchurch Symphony Orchestra and Opus Orchestra. She performs with the Auckland Philharmonia and Auckland Chamber Orchestra, and has also worked with the Royal New Zealand Ballet, Bach Musica NZ and Orchestra Wellington. Jesbery is active in chamber music, and enjoys collaborating with many musicians around the country. In 2026 she was invited to be one of the adjudicators of the distinguished NZCT Chamber Music NZ competition.",
+      "In 2025 Jesbery was invited to a prestigious tour around Croatia and Bosnia & Herzegovina with the Kralj Tomislav Folklore Ensemble NZ and Croatia's gem of esteemed Llado musicians where all performances were held at historical sites. She has also played in renowned venues and festivals around Europe including the Berlin Konzerthaus.",
+      "Holding a Master of Music with First Class Honours, Jesbery runs a private cello studio and also teaches at Epsom Music School.",
     ],
   },
   callum: {
