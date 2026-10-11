@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import type { NextPage } from "next"; // Import NextPage type
+import { BlurImage } from "~/components/BlurImage";
 import { artists } from "~/lib/artists";
 import type { Artists } from "~/lib/artists";
 import Link from "next/link";
@@ -46,13 +46,11 @@ const Artist: NextPage<{ params: { id: Artists } }> = ({ params }) => {
           </div>
 
           <div className="relative w-auto md:h-[450px] lg:h-[500px] aspect-10/12">
-            <Image
+            <BlurImage
               fill
               src={`/artists/${artist.image}.jpeg`}
               alt={artist.name}
               className="object-cover"
-
-              // className="h-96 w-full object-cover md:w-auto"
             />
           </div>
         </div>

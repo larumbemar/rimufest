@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { BlurImage } from "~/components/BlurImage";
 import React, { useState, useRef } from "react";
 import { cn } from "~/lib/utils";
 
@@ -84,7 +84,7 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
             }}
           />
           <div className="relative w-full aspect-10/12">
-            <Image
+            <BlurImage
               alt="project-box"
               fill
               className={cn("object-cover", imagePosition)}

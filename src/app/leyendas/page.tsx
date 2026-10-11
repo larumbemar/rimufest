@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { BlurImage } from "~/components/BlurImage";
 import { artists } from "~/lib/artists";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { useEffect, useRef, useState } from "react";
@@ -72,12 +73,13 @@ function PerformerSheet({
       <DialogPrimitive.Trigger asChild>
         <button className="group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a059] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent">
           <div className="mx-auto flex max-w-[10rem] flex-col items-center gap-3 sm:max-w-[11rem]">
-            <Image
+            <BlurImage
               src={performer.image}
               alt={performer.name}
               width={320}
               height={320}
-              className="h-auto w-full object-contain transition duration-300 group-hover:scale-105"
+              wrapperClassName="transition duration-300 group-hover:scale-105"
+              className="h-auto w-full object-contain"
             />
             <div className="text-xs font-semibold tracking-wide text-[color:var(--heading,_#3b2317)] sm:text-sm">
               <div>{performer.name}</div>
@@ -108,7 +110,7 @@ function PerformerSheet({
 
           <div className="flex-1 space-y-4 overflow-y-auto px-6 py-5">
             <div className="relative h-64 w-64 overflow-hidden">
-              <Image
+              <BlurImage
                 src={performer.image}
                 alt={performer.name}
                 fill
@@ -187,29 +189,37 @@ export default function LeyendasPage() {
   {/* 2. HERO SECTION (Bottom-Aligned Content) */}
   <section ref={heroRef} className="relative flex h-[80vh] w-full flex-col justify-end overflow-hidden bg-[#f8f3e6] md:h-[90vh]">
     {/* Mobile image - centered */}
-    <Image
-      src="/leyendas/hero-mobile.jpeg"
-      alt="Leyendas backdrop"
-      fill
-      priority
-      className="pointer-events-none select-none object-cover object-center md:hidden"
+    <div
+      className="absolute inset-0 md:hidden"
       style={{
         transform: `translateY(${scrollY}px) scale(1.1)`,
         willChange: "transform",
       }}
-    />
+    >
+      <BlurImage
+        src="/leyendas/hero-mobile.jpeg"
+        alt="Leyendas backdrop"
+        fill
+        priority
+        className="pointer-events-none select-none object-cover object-center"
+      />
+    </div>
     {/* Desktop image */}
-    <Image
-      src="/leyendas/hero.jpg"
-      alt="Leyendas backdrop"
-      fill
-      priority
-      className="hidden pointer-events-none select-none object-cover object-[center_20%] md:block"
+    <div
+      className="absolute inset-0 hidden md:block"
       style={{
         transform: `translateY(${scrollY}px) scale(1.1)`,
         willChange: "transform",
       }}
-    />
+    >
+      <BlurImage
+        src="/leyendas/hero.jpg"
+        alt="Leyendas backdrop"
+        fill
+        priority
+        className="pointer-events-none select-none object-cover object-[center_20%]"
+      />
+    </div>
     
     {/* The "Anchor" Gradient: Transparent at top, dark at bottom for text, ends perfectly at the section edge */}
     {/* <div 
@@ -304,7 +314,7 @@ export default function LeyendasPage() {
             <div className="flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-10">
               <div className="order-1 w-full md:order-none md:w-1/2">
                 <div className="relative mx-auto max-w-sm md:max-w-md">
-                  <Image
+                  <BlurImage
                     src="/leyendas/brazil.png"
                     alt="Brazil programme graphic"
                     width={600}
@@ -333,7 +343,7 @@ export default function LeyendasPage() {
             <div className="flex flex-col items-center gap-8 md:flex-row-reverse md:items-center md:gap-10">
               <div className="order-1 w-full md:order-none md:w-1/2">
                 <div className="relative mx-auto max-w-sm md:max-w-md">
-                  <Image
+                  <BlurImage
                     src="/leyendas/andes.png"
                     alt="Andes programme graphic"
                     width={600}

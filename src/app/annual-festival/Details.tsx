@@ -19,6 +19,10 @@ export const Details = () => {
         </span>
       </span>
       <span className="text-xl">
+        Tuition:{" "}
+        <span className="font-normal italic text-nowrap">$300</span>
+      </span>
+      <span className="text-xl">
         Music sent:{" "}
         <span className="font-normal italic">
           Late November / early December

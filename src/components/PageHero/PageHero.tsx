@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { BlurImage } from "~/components/BlurImage";
 import { RimuFestLogo } from "./RimufestLogo";
 
 type Props = {
@@ -15,7 +15,7 @@ export const PageHero = ({ title, image }: Props) => {
       </Link>
       <h1 className="py-12 text-4xl mx-4 md:px-0 md:text-6xl">{title}</h1>
       <div className="relative w-full aspect-16/10">
-        <Image alt="preloaded" fill className="object-cover" src={image} />
+        <BlurImage alt="preloaded" fill className="object-cover" src={image} />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import { BlurImage } from "~/components/BlurImage";
 import { useEffect, useRef, useState } from "react";
 import { FeatureBox } from "~/components/FeatureBox";
 import { HomeHero } from "~/components/HomeHero";
@@ -87,11 +86,12 @@ export default function HomePage() {
         </div>
 
         <div className="flex md:flex-row flex-col-reverse gap-8 md:gap-12 lg:gap-16">
-          <Image
+          <BlurImage
             alt="RimuFest performance at venue"
             width={1000}
             height={1200}
-            className="h-auto w-full max-w-full max-h-[400px] md:max-h-none md:w-[400px] md:h-[480px] object-cover transition-transform duration-300 hover:scale-105 md:mt-6"
+            wrapperClassName="md:mt-6 md:w-[400px] md:shrink-0 transition-transform duration-300 hover:scale-105"
+            className="h-auto w-full max-h-[400px] object-cover md:h-[480px] md:max-h-none"
             src={"/home/performance.jpeg"}
           />
           <p className="text-base font-semibold leading-relaxed md:text-lg font-bold max-w-[28rem] lg:max-w-96">

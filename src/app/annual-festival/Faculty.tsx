@@ -3,8 +3,11 @@ import { FeatureBox } from "~/components/FeatureBox";
 import { artists } from "~/lib/artists";
 import type { Artist } from "~/lib/artists";
 
-// Faculty not yet confirmed for this event; keep list empty until announced.
-const facultyMembers: Array<{ artist: Artist; borderColor: string; framePosition: "up" | "down" }> = [];
+// Faculty for Annual 2027.
+const facultyMembers: Array<{ artist: Artist; borderColor: string; framePosition: "up" | "down" }> = [
+  { artist: artists["amelia-taylor"], borderColor: "green", framePosition: "up" },
+  { artist: artists["kate-ellingham-hunt"], borderColor: "blue", framePosition: "down" },
+];
 
 export const Faculty = () => {
   if (facultyMembers.length === 0) return null;

@@ -5,7 +5,7 @@ import Link from "next/link";
 import * as AppMenuPrimitive from "@radix-ui/react-dialog";
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { cn } from "../../lib/utils";
-import Image from "next/image";
+import { BlurImage } from "~/components/BlurImage";
 import { RimuFestLogo } from "./RimufestLogo";
 
 const navigationLinks = [
@@ -100,12 +100,12 @@ const AppMenuContent = React.forwardRef<
         >
           {backgroundImage && (
             <div className="absolute inset-0 h-screen w-screen duration-1000 animate-in fade-in">
-              <Image
-                className={`z-[45] mx-auto h-full w-full object-cover`}
+              <BlurImage
+                fill
+                className="z-[45] object-cover"
                 src={`/${backgroundImage}.jpeg`}
                 alt="preloaded"
-                width={2000}
-                height={1000}
+                sizes="100vw"
                 priority
               />
             </div>

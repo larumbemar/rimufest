@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage } from "~/components/BlurImage";
 import { FeatureBox } from "~/components/FeatureBox";
 import { LinkButton } from "~/components/LinkButton";
 import { PageHero } from "~/components/PageHero/PageHero";
@@ -18,9 +18,9 @@ const About = () => {
       <div className="z-10 flex h-fit w-screen flex-col items-center gap-12  justify-center bg-white px-6 py-32 lg:px-8 ">
         <div className="flex lg:flex-row flex-col-reverse items-centerjustify-center mt-24 gap-8  lg:w-fit w-[300px] md:w-[400px]">
           <div className="relative w-[300px] md:w-[400px] h-[300px] md:h-[400px] overflow-hidden rounded-full">
-            <Image
+            <BlurImage
               alt="cofounders"
-              layout="fill"
+              fill
               className="object-cover"
               src={"/about/cofounders.jpg"}
             />

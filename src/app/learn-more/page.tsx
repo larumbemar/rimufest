@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import { BlurImage } from "~/components/BlurImage";
 import { PageHero } from "~/components/PageHero/PageHero";
 
 const learnMore = [
@@ -97,7 +97,12 @@ interface LearnMoreItemProps {
 const LearnMoreItem: React.FC<LearnMoreItemProps> = ({ item }) => (
   <div>
     <div className="relative w-full aspect-10/12">
-      <Image alt={item.title} fill className="object-cover" src={item.image} />
+      <BlurImage
+        alt={item.title}
+        fill
+        className="object-cover"
+        src={item.image}
+      />
     </div>
     <div className="pl-6 mt-8 border-l border-gray-200">
       <h2 className="font-bold">{item.title}</h2>
