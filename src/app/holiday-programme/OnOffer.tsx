@@ -26,34 +26,30 @@ export const OnOffer = () => {
         <ul className="flex flex-col gap-1 list-disc pl-5 ">
           <li>
             RimuFest is committed to making chamber music education accessible
-            to all students. A limited number of scholarships are available for
-            those who would not be able to attend the programme without
-            financial assistance. These may be full or partial and are open to
-            all applicants.
+            to all students. A limited number of scholarships were available for
+            those who would not have been able to attend the programme without
+            financial assistance. These were full or partial and open to all
+            applicants.
           </li>
           <li>
-            Priority will be given to students applying from outside Tauranga
-            due to the additional costs associated with travel and
-            accommodation. Tauranga-based students are still welcome to apply
-            and will be considered if funding permits.
-          </li>
-          <li>
-            If you are experiencing genuine financial hardship, you may indicate
-            this on your registration form to be considered for a scholarship.
+            Priority was given to students applying from outside Tauranga due to
+            the additional costs associated with travel and accommodation.
+            Tauranga-based students were still welcome to apply and were
+            considered if funding permitted.
           </li>
         </ul>
       </p>
-      <p className="text-sm mt-4">PRE-FORMED GROUPS WELCOME!</p>
+      <p className="text-sm mt-4">PRE-FORMED GROUPS</p>
 
       <p className="mt-1 flex flex-col gap-1">
         <ul className="flex flex-col gap-1 list-disc pl-5 ">
           <li>
-            Each member must submit an individual registration form, but you may
-            all use the same audition video.
+            Pre-formed groups were welcome. Each member submitted an individual
+            registration form, and the group could share one audition video.
           </li>
           <li>
-            The video should feature a clip from one of your group’s
-            performances or rehearsals.
+            The video featured a clip from one of the group’s performances or
+            rehearsals.
           </li>
         </ul>
       </p>

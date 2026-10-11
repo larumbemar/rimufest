@@ -11,6 +11,9 @@ const HolidayProgramme = () => {
         image={"/holiday-programme.jpeg"}
       />
       <div className="z-10 flex h-fit w-screen flex-col items-center justify-center gap-12 bg-white px-6 py-32 lg:px-8 ">
+        <p className="text-center text-sm font-bold uppercase tracking-widest text-neutral-500">
+          This programme has finished
+        </p>
         <div className="flex flex-col lg:flex-row gap-12 lg:mx-24">
           <Details />
           <OnOffer />

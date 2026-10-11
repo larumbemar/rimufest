@@ -44,20 +44,19 @@ export default function HomePage() {
         <div className="flex w-full flex-col items-stretch gap-10 md:flex-row md:items-start my-16 md:my-24">
           <div className="w-full md:w-1/2">
             <FeatureBox
-              title="Term 3 Holiday Programme 2026"
-              href="/holiday-programme"
-              imageSrc="/holiday.jpeg"
+              title="8th Annual Festival 2027"
+              href="/annual-festival"
+              imageSrc="/annual-portrait.jpeg"
               captions={[
-                "September 27th - 30th, 2026",
+                "January 8th - 13th, 2027",
                 "Tauranga, NZ",
-                "Applications open now",
               ]}
-              borderColor="green"
+              borderColor="amber"
               framePosition="up"
             />
-             <div className="mt-6 pl-4">
+            <div className="mt-2 ml-6 pl-4">
               <a
-                href="https://forms.gle/eSojeoZd9RdP1Sp46 "
+                href="https://forms.gle/mAe8FQaPFMAB9ez47"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-4 py-2 text-sm font-bold uppercase tracking-widest text-[#3b2317] shadow-md transition-colors hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c5a059] focus:ring-offset-transparent"
@@ -69,16 +68,21 @@ export default function HomePage() {
 
           <div className="w-full md:mt-16 md:w-1/2">
             <FeatureBox
-              title="8th Annual Festival 2027"
-              href="/annual-festival"
-              imageSrc="/annual-portrait.jpeg"
+              title="Term 3 Holiday Programme 2026"
+              href="/holiday-programme"
+              imageSrc="/holiday.jpeg"
               captions={[
-                "January 8th - 13th, 2027",
+                "September 27th - 30th, 2026",
                 "Tauranga, NZ",
               ]}
-              borderColor="amber"
+              borderColor="green"
               framePosition="down"
             />
+            <div className="mt-2 ml-6 pl-4">
+              <span className="inline-flex items-center justify-center rounded-full bg-neutral-200 px-4 py-2 text-sm font-bold uppercase tracking-widest text-[#3b2317]">
+                Closed
+              </span>
+            </div>
           </div>
         </div>
 
