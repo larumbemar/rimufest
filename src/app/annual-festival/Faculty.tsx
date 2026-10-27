@@ -7,6 +7,8 @@ import type { Artist } from "~/lib/artists";
 const facultyMembers: Array<{ artist: Artist; borderColor: string; framePosition: "up" | "down" }> = [
   { artist: artists["amelia-taylor"], borderColor: "green", framePosition: "up" },
   { artist: artists["kate-ellingham-hunt"], borderColor: "blue", framePosition: "down" },
+  { artist: artists["lara-hall"], borderColor: "purple", framePosition: "down" },
+  { artist: artists["anna-marie-alloway"], borderColor: "amber", framePosition: "up" },
 ];
 
 export const Faculty = () => {

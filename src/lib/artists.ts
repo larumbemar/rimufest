@@ -12,6 +12,8 @@ export type Artists =
   | "amelia-taylor"
   | "alejandro-larumbe"
   | "kate-ellingham-hunt"
+  | "lara-hall"
+  | "anna-marie-alloway"
   | "maria-mo"
   | "jesbery-hartono-hall"
   | "callum"
@@ -53,6 +55,30 @@ export const artists: Record<Artists, Artist> = {
       "She has taught private and group Suzuki lessons for over 15 years in NZ and the UK.",
       "She spent three years training to be a teacher of the Alexander Technique in London where she got the chance to assist with the Alexander Technique programme at the Royal College of Music.",
       "She has an interest in the way we use our bodies and how that affects our health and technique as musicians.",
+    ],
+  },
+  "lara-hall": {
+    name: "Dr Lara Hall",
+    instrument: "Violin",
+    image: "lara-hall",
+    path: "lara-hall",
+    bio: [
+      "Dr Lara Hall has taught violin and viola at the University of Waikato since her return from the US in 2006, at which point she also joined Opus Orchestra and formed the New Zealand Chamber Soloists.",
+      "Lara has released CDs as a chamber musician, concerto soloist and solo violinist on the Atoll and Naxos labels. She is the only musician to have performed variously on violin, baroque violin and viola in Chamber Music New Zealand's main series — concerts that showcase international artists.",
+      "After obtaining a Bmus at the University of Auckland, study included a Doctorate at the University of Michigan (one of the top 4 universities in the USA) and a summer in the Dorothy Delay Studio (acknowledged as the top violin teacher in the world at the time).",
+      "Lara has toured internationally giving performances in the UK, Europe and South America. She has also given master classes at institutions including the Royal Academy of Music in Dublin, Interlochen Arts Academy in the US, and top Asian music conservatories: Yong Siew Toh in Singapore and Shanghai. She has held short-term contracts with the APO and Auckland Chamber Orchestra.",
+    ],
+  },
+  "anna-marie-alloway": {
+    name: "Anna-Marie Alloway",
+    instrument: "Cello",
+    image: "anna-marie-alloway",
+    path: "anna-marie-alloway",
+    bio: [
+      "Anna-Marie Alloway has been playing cello since she was three years old. Originally taught by her mother and esteemed cellist Sally-Anne Brown, a graduate of Mozarteum Salzburg, Austria, Anna-Marie found a great passion for music. In 2013 she completed her Bachelor of Music in Performance Cello and her Postgraduate Diploma in Performance Cello under the tutelage of Rolf Gjelsten, of the New Zealand String Quartet.",
+      "In 2010–2013 she was a member of the cello section of the NZSO National Youth Orchestra. In 2014 Anna-Marie won the spot as principal cellist for NZSO-NYO's summer residency course held in Waikanae. She has also participated in the Adam Foundation Nelson Summer School, the Bay of Plenty Concerto Competition and has participated in masterclasses with esteemed cellists Lynn Harrell and Raphael Wallfisch. In 2014 she attended the Kronberg Academy in Germany.",
+      "Anna-Marie has undertaken Suzuki Teacher Training in New Zealand and Suzuki Pedagogy Training in Lucerne, Switzerland. In 2016 she participated in the Adam Chamber Music Festival in Nelson as the cellist in the Troubadour Quartet. Anna-Marie featured in several concerts during the festival: Cellisimo, Bach by Candlelight and the Grand Finale Concert, where she performed Dvorak's Serenade for Strings with the New Zealand String Quartet and the Goldner Quartet. In 2017 her quartet The Troubadours toured New Zealand on an Encompass tour with Chamber Music New Zealand.",
+      "Since 2020 Anna-Marie has been an active member in the events industry, organising musicians to perform across New Zealand in collaboration with touring artists. Recently she performed alongside Ms. Lauryn Hill on her New Zealand leg of her Miseducation tour in 2023. Alongside her performing, Anna-Marie has flourishing studios in the Auckland and Waikato regions, encouraging and inspiring New Zealand's next generation of aspiring musicians.",
     ],
   },
   "maria-mo": {
